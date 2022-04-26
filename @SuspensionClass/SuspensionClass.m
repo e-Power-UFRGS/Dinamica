@@ -29,5 +29,14 @@ classdef SuspensionClass
             outputArg = obj.Property1 + inputArg;
         end
     end
+    
+    methods (Hidden, Access = protected)
+        % Add private methods
+    end
+    
+    methods (Static)
+        % Add static methods like class documentation 
+    end
+    
 end
 
