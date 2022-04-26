@@ -3,8 +3,8 @@ classdef SuspensionClass
     %   Detailed explanation goes here
     
     properties
-        Property1
-        
+        Type = '';
+        Chassis = ChassisClass();
     end
     
     properties (SetAccess = private, Hidden = true)
@@ -12,26 +12,87 @@ classdef SuspensionClass
     end
     
     methods
-        %% Default constructor
+        
         function obj = SuspensionClass()
         end
         
-        %%
-        function obj = untitled3(inputArg1,inputArg2)
-            %UNTITLED3 Construct an instance of this class
+        %% Calculate Front View parameters
+        function CalculateH_FVSA(obj)
             %   Detailed explanation goes here
             obj.Property1 = inputArg1 + inputArg2;
         end
         
-        function outputArg = method1(obj,inputArg)
-            %METHOD1 Summary of this method goes here
+        function CalculateL_FVSA(obj)
             %   Detailed explanation goes here
-            outputArg = obj.Property1 + inputArg;
+            obj.Property1 = inputArg1 + inputArg2;
         end
+        
+        function CalculateIC_FV(obj)
+            %   Detailed explanation goes here
+            obj.Property1 = inputArg1 + inputArg2;
+        end
+        
+        %% Calculate Side View parameters
+        function CalculateH_SVSA(obj)
+            %   Detailed explanation goes here
+            obj.Property1 = inputArg1 + inputArg2;
+        end
+        
+        function CalculateL_SVSA(obj)
+            %   Detailed explanation goes here
+            obj.Property1 = inputArg1 + inputArg2;
+        end
+        
+        function CalculateIC_SV(obj)
+            %   Detailed explanation goes here
+            obj.Property1 = inputArg1 + inputArg2;
+        end
+        
+        %%
+        function CalculateRollCenter(inputArg1,inputArg2)
+            %   Detailed explanation goes here
+            obj.Property1 = inputArg1 + inputArg2;
+        end
+        
+        function CalculateRollAxisAngle(inputArg1,inputArg2)
+            %   Detailed explanation goes here
+            obj.Property1 = inputArg1 + inputArg2;
+        end
+        
+        %% Camber change mechanisms
+        function CalculateCamberChangeFromKingpin(inputArg1,inputArg2)
+            %   Detailed explanation goes here
+            obj.Property1 = inputArg1 + inputArg2;
+        end
+        
+        function CalculateCamberChangeFromCasterAngle(inputArg1,inputArg2)
+            %   Detailed explanation goes here
+            obj.Property1 = inputArg1 + inputArg2;
+        end
+        
+        function CalculateCamberChangeFromSteerAngle(inputArg1,inputArg2)
+            %   Detailed explanation goes here
+            obj.Property1 = inputArg1 + inputArg2;
+        end
+        
+        function CalculateTotalCamberGain(inputArg1,inputArg2)
+            %   Detailed explanation goes here
+            obj.Property1 = inputArg1 + inputArg2;
+        end
+        
+        %% Jacking and Packing Forces
+        function CalculateJackingPackingForce(inputArg1,inputArg2)
+            %   Detailed explanation goes here
+            obj.Property1 = inputArg1 + inputArg2;
+        end
+        
+        %%
+        
+        
     end
     
     methods (Hidden, Access = protected)
-        % Add private methods
+        % Add private methods if necessary
     end
     
     methods (Static)
